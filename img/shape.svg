@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="227.16" height="81" viewBox="0 0 227.16 81">
+<defs>
+    <style>
+      .cls-1 {
+        fill: rgba(44,59,64,0.9);
+      }
+    </style>
+</defs>
+  <path class="cls-1" d="M846,430l227.17-27v81H846V430Z" transform="translate(-846 -403)"/>
+</svg>

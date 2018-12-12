@@ -1,6 +1,6 @@
 .footer {
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
   color: #fff;
   font-size: 14px;
   background-color: @normal;
@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 12px;
   
   a {
     text-decoration: underline;
@@ -49,7 +50,7 @@
 .footer__phone {
   display: block;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   padding-left: 35px;
   text-align: right;
   
@@ -64,9 +65,12 @@
 }
 
 .footer__phone {
+  padding-top: 10px;
+  
   &::before {
     width: 30px;
     height: 30px;
+    top: 8px;
     background-image: url(../img/smartphone.svg);
   }
 }
@@ -77,6 +81,11 @@
     height: 25px;
     left: 3px;
     background-image: url(../img/email.svg);
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
   }
 }
 

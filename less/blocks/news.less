@@ -30,15 +30,23 @@
 }
 
 .news__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
   padding: 25px;
+  padding-bottom: 30px;
   border-radius: 2px;
   box-shadow: 0px 4px 10px 0px rgba(55, 68, 74, 0.5);
   
   &:last-child {
     margin-bottom: 0;
+  }
+  
+  .link {
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
   }
 }
 
@@ -63,10 +71,5 @@
   
   time {
     font-size: 12px;
-  }
-  
-  .link {
-    display: block;
-    text-align: right;
   }
 }

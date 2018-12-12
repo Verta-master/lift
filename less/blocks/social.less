@@ -1,0 +1,33 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: auto;
+}
+
+.social__item {
+  margin-right: 20px;
+}
+
+.social__link {
+  svg {
+    height: 30px;
+    width: auto;
+    fill: #fff;
+    .transition();
+  }
+  
+  &--in svg {
+    height: 23px;
+  }
+  
+  &:hover,
+  &:active {
+    svg {
+      fill: @green;
+      .transition();
+    }
+  }
+}

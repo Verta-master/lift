@@ -20,14 +20,17 @@
   .transition();
   
   &:hover,
-  &:active,
-  &--active {
+  &:active {
     background-color: @green;
     .transition();
     
     .menu__sublist {
       display: block;
     }
+  }
+  &--active {
+    background-color: @green;
+    .transition();
   }
 }
 

@@ -1737,6 +1737,9 @@ h3 a:active,
   .tabs__bottom-link svg {
     height: 30px;
   }
+  .tabs__field {
+    height: 370px;
+  }
   .footer__top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

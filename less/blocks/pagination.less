@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pagination__link {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  border: 1px solid #f0f1f2;
+  .transition();
+  
+  &--disabled {
+    display: none;
+  }
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
+
+span.pagination__link {
+  color: @red;
+}

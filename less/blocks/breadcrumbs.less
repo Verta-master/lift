@@ -1,0 +1,29 @@
+.breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.breadcrumbs__link {
+  position: relative;
+  margin-right: 25px;
+  .transition();
+}
+
+a.breadcrumbs__link {
+  &::after {
+    content: "/";
+    position: relative;
+    bottom: 0;
+    right: -14px;
+  }
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+    
+    &::after {
+      color: @normal;
+    }
+  }
+}

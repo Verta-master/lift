@@ -1,0 +1,42 @@
+.related {
+  position: relative;
+  margin-bottom: 100px;
+  
+  .swiper-wrapper {
+    align-items: stretch;
+  }
+}
+
+.related__item {
+  position: relative;
+  width: 360px;
+  height: auto;
+  border: 1px solid #f0f1f2;
+  box-sizing: border-box;
+  
+  &:hover,
+  &:active {
+    .catalog__title {
+      color: @red;
+      .transition();
+    }
+    .catalog__img img {
+      transform: scale(1.05);
+      .transition();
+    }
+  }
+}
+
+.related__prev,
+.related__next {
+  color: @normal;
+  border-color: @normal;
+}
+
+.related__prev {
+  left: -40px;
+}
+
+.related__next {
+  right: -40px;
+}

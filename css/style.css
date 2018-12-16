@@ -1014,6 +1014,9 @@ h3 a:active,
 .about {
   padding-bottom: 80px;
 }
+.about--internal {
+  padding-bottom: 20px;
+}
 .about .social__link svg {
   fill: #b7241b;
 }

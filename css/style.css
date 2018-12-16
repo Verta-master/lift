@@ -1167,6 +1167,30 @@ h3 a:active,
   padding-top: 50px;
   padding-bottom: 80px;
 }
+.news--page {
+  padding-top: 0;
+}
+.news--page .news__list {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.news--page .news__item {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 1px solid rgba(44, 59, 64, 0.07);
+}
+.news--page .news__item:last-child {
+  border-bottom: 0;
+}
+.news--page .news__img {
+  width: 20%;
+}
+.news--page .news__info {
+  width: 75%;
+}
 .news__wrap {
   position: relative;
 }
@@ -2465,5 +2489,9 @@ span.pagination__link {
   }
   .related__next {
     right: 30%;
+  }
+  .news--page .news__info,
+  .news--page .news__img {
+    width: 100%;
   }
 }

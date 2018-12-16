@@ -801,6 +801,7 @@ h3 a:active,
 }
 .tabs {
   padding-top: 15px;
+  margin-bottom: 50px;
 }
 .tabs__header {
   margin: 0;
@@ -1000,7 +1001,6 @@ h3 a:active,
   transition: ease-out 0.3s;
 }
 .about {
-  padding-top: 50px;
   padding-bottom: 80px;
 }
 .about__wrap {
@@ -1024,6 +1024,15 @@ h3 a:active,
 }
 .about__info {
   width: 50%;
+}
+.about__img {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about__img img {
+  width: 100%;
+  height: auto;
 }
 .benefits {
   padding-top: 50px;
@@ -1894,12 +1903,29 @@ span.pagination__link {
 .card__slider {
   padding-top: 20px;
 }
-.fotorama__stage {
+.card__img-big {
+  width: 100%;
   margin-bottom: 20px;
   border: 1px solid #cccccc;
 }
-.fotorama__thumb-border {
-  border-color: #96d800;
+.card__thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.card__thumbs a {
+  display: block;
+  width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .card__btn {
   margin-top: 55px;
@@ -1933,12 +1959,16 @@ span.pagination__link {
 }
 .related {
   position: relative;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 .related .swiper-wrapper {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+.related__slider {
+  margin-top: 40px;
 }
 .related__item {
   position: relative;
@@ -2419,6 +2449,11 @@ span.pagination__link {
   .related {
     padding-bottom: 70px;
     margin-bottom: 50px;
+  }
+  .related .link {
+    position: static;
+    display: block;
+    text-align: center;
   }
   .related__prev,
   .related__next {

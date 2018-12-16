@@ -18,13 +18,24 @@
   padding-top: 20px;
 }
 
-.fotorama__stage {
+.card__img-big {
+  width: 100%;
   margin-bottom: 20px;
   border: 1px solid #cccccc;
 }
 
-.fotorama__thumb-border {
-  border-color: @green;
+.card__thumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  a {
+    display: block;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 .card__btn {

@@ -562,20 +562,25 @@ h3 a:active,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.link {
+.link,
+.about .link {
   font-family: "Supermolot", "Arial", sans-serif;
   text-decoration: underline;
+  color: #2c3b40;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
 .link:hover,
-.link:active {
+.about .link:hover,
+.link:active,
+.about .link:active {
   color: #b7241b;
   text-decoration: none;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.link--right {
+.link--right,
+.about .link--right {
   position: absolute;
   top: 0;
   right: 15px;
@@ -1002,6 +1007,19 @@ h3 a:active,
 }
 .about {
   padding-bottom: 80px;
+}
+.about .social__link svg {
+  fill: #b7241b;
+}
+.about time {
+  opacity: 0.8;
+}
+.about a {
+  color: #b7241b;
+}
+.about a:hover,
+.about a:active {
+  text-decoration: underline;
 }
 .about__wrap {
   display: -webkit-box;
@@ -1434,11 +1452,16 @@ h3 a:active,
 }
 .social__item {
   margin-right: 20px;
-  max-width: 30px;
+  width: 30px;
+}
+.social__link {
+  display: block;
+  width: 100%;
 }
 .social__link svg {
-  height: 30px;
-  width: auto;
+  display: block;
+  width: 100%;
+  height: auto;
   fill: #fff;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
@@ -2448,7 +2471,7 @@ span.pagination__link {
             justify-content: flex-start;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
   .related__slider {
     width: 290px;

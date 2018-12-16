@@ -463,6 +463,12 @@ h1 {
   font-weight: 400;
   text-transform: uppercase;
 }
+.js_shop_img.shop-item-image {
+  display: none;
+}
+.js_shop_img.shop-item-image.active {
+  display: block;
+}
 .wrapper {
   width: 1170px;
   margin-left: auto;
@@ -2049,6 +2055,97 @@ span.pagination__link {
 .related__next {
   right: -40px;
 }
+.contacts {
+  padding-bottom: 80px;
+}
+.contacts span,
+.contacts address {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+.contacts span::before,
+.contacts address::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+}
+.contacts address::before {
+  background-image: url(../img/placeholder-dark.svg);
+}
+.contacts span::before {
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: -2px;
+  background-image: url(../img/watch.svg);
+}
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contacts__info {
+  width: 40%;
+  padding-right: 20px;
+}
+.contacts__map {
+  width: 60%;
+}
+.contacts__map iframe {
+  display: block;
+  border: 0;
+  width: 100%;
+  min-height: 400px;
+}
+.contacts__phone,
+.contacts__mail {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.contacts__phone::before,
+.contacts__mail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+}
+.contacts__phone:hover,
+.contacts__mail:hover,
+.contacts__phone:active,
+.contacts__mail:active {
+  color: #b7241b;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.contacts__phone::before {
+  background-image: url(../img/smartphone-dark.svg);
+}
+.contacts__mail::before {
+  background-image: url(../img/email-dark.svg);
+}
 @media (max-width: 1170px) {
   .wrapper {
     width: 100%;
@@ -2192,6 +2289,16 @@ span.pagination__link {
   }
   .content__column {
     width: 100%;
+  }
+  .contacts__wrap {
+    display: block;
+  }
+  .contacts__info,
+  .contacts__map {
+    width: 100%;
+  }
+  .contacts__info {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 700px) {
